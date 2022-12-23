@@ -1,7 +1,7 @@
 # How to use
 
-- install
-  ` npm i @mtpjr88/lotr-sdk`
+install
+`npm i @mtpjr88/lotr-sdk`
 
 # example
 
