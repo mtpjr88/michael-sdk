@@ -1,7 +1,22 @@
 # How to use
 
-install
-`npm i @mtpjr88/lotr-sdk`
+# if potential issues running
+
+- consuming application should also have typescript vesrion 4.9.4
+
+- \*not ideal (last resort if you cannot get running, copy and paste files in consuming app)
+
+# install
+
+```terminal
+> npm i @mtpjr88/lotr-sdk
+```
+
+# run locally in consuming app
+
+```terminal
+> npm link @mtpjr88/lotr-sdk
+```
 
 # example
 
@@ -10,6 +25,8 @@ import LotrSDK from '@mtpjr88/lotr-sdk';
 
 // instantiate
 const sdk = new sdk('jJ6JNW715HN-v9qsjTuy');
+
+// All methods return a promise, hence supports .then() or async await
 
 /** returns all book chapters */
 const result = await sdk.getAllBookChapters();
